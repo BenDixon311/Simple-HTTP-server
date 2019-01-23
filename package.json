@@ -1,0 +1,22 @@
+{
+  "name": "simple-http-server",
+  "version": "1.0.0",
+  "description": "Simple HTTP server in node.js for testing",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenDixon311/Simple-HTTP-server.git"
+  },
+  "author": "Ben Dixon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenDixon311/Simple-HTTP-server/issues"
+  },
+  "homepage": "https://github.com/BenDixon311/Simple-HTTP-server#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
