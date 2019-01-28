@@ -1,22 +1,16 @@
-const http = require('http');
-
 const express = require('express');
 
-const app = express();
+const routes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
 
 
-//this is 'middleware'
-app.use('/', (req, res, next) => {
+app.use(bodyParser.urlencoded({extended: false}));
 
-    //use 'send' to send a response. used instead of setHeader and write
-    //when sending a response, you DO NOT want to use next()
-    next();
-});
+app.use(routes);
+app.use(shopRoutes);
 
-app.use('/add-product', (req, res, next) => {
 
-    res.send('<h1>this is product page</h1>');
-})
+
 
 
 app.listen(5000);
